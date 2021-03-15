@@ -39,7 +39,7 @@
         console.log(movie)
         const options = {
 			method: "PUT",
-            url: `https://watchly-app-backend.herokuapp.com/updateList/${movie._id}`,
+            url: `https://watchly-app-backend.herokuapp.com/api/updateList/${movie._id}`,
             data: {
                 watched: !movie.watched
             }
