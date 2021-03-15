@@ -10,7 +10,7 @@
     onMount(async () => {
         const options = {
 			method: "GET",
-			url: "http://localhost:3000/api/movies",
+			url: "https://watchly-app-backend.herokuapp.com/api/movies",
 		};
 		axios.request(options)
 		.then((res) => {
@@ -24,7 +24,7 @@
     onMount(async () => {
         const options = {
 			method: "GET",
-			url: "http://localhost:3000/api/favorites",
+			url: "https://watchly-app-backend.herokuapp.com/api/favorites",
 		};
 		axios.request(options)
 		.then((res) => {
@@ -39,7 +39,7 @@
         console.log(movie)
         const options = {
 			method: "PUT",
-            url: `http://localhost:3000/api/updateList/${movie._id}`,
+            url: `https://watchly-app-backend.herokuapp.com/updateList/${movie._id}`,
             data: {
                 watched: !movie.watched
             }
@@ -57,7 +57,7 @@
         console.log(movie)
         const options = {
 			method: "PUT",
-            url: `http://localhost:3000/api/updateFavList/${movie._id}`,
+            url: `https://watchly-app-backend.herokuapp.com/api/updateFavList/${movie._id}`,
             data: {
                 watched: !movie.watched
             }
@@ -76,7 +76,7 @@
         watchList = watchList
         const options = {
 			method: "DELETE",
-            url: `http://localhost:3000/api/deleteList/${movie._id}`,
+            url: `https://watchly-app-backend.herokuapp.com/api/deleteList/${movie._id}`,
             data: {
                 watched: !movie.watched
             }
@@ -94,7 +94,7 @@
         favorites = favorites
         const options = {
 			method: "DELETE",
-            url: `http://localhost:3000/api/deleteFavList/${movie._id}`,
+            url: `https://watchly-app-backend.herokuapp.com/api/deleteFavList/${movie._id}`,
             data: {
                 watched: !movie.watched
             }

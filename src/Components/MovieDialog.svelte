@@ -17,7 +17,7 @@
         selectedMovie = movie;
         const options = {
 			method: "POST",
-            url: "http://localhost:3000/api/addList",
+            url: "https://watchly-app-backend.herokuapp.com/api/addList",
             data: {
                 title: selectedMovie.title,
                 img: `https://image.tmdb.org/t/p/w500${selectedMovie.poster_path}`,
@@ -40,7 +40,7 @@
         selectedMovie = movie;
         const options = {
 			method: "POST",
-            url: "http://localhost:3000/api/addFavorite",
+            url: "https://watchly-app-backend.herokuapp.com/api/addFavorite",
             data: {
                 title: selectedMovie.title,
                 img: `https://image.tmdb.org/t/p/w500${selectedMovie.poster_path}`,
