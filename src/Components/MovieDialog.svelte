@@ -27,7 +27,6 @@
 		};
 		axios.request(options)
 		.then((res) => {
-            console.log(res)
             alert(res.data.message)
             closeDialog()
 		})
@@ -50,7 +49,6 @@
 		};
 		axios.request(options)
 		.then((res) => {
-            console.log(res)
             alert(res.data.message)
             closeDialog()
 		})
@@ -93,7 +91,7 @@
         border-radius: 5px;
         border: 2px solid #011627;
     }
-     .movie-details button:hover {
+    .movie-details button:hover {
         color: #ffffff;
         background-color: #011627;
         border: 2px solid #2ec4b6;

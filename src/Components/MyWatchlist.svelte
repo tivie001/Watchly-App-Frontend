@@ -14,7 +14,6 @@
 		};
 		axios.request(options)
 		.then((res) => {
-            console.log(res)
             watchList = res.data.watchList
 		})
 		.catch((err) => {
@@ -28,7 +27,6 @@
 		};
 		axios.request(options)
 		.then((res) => {
-            console.log(res)
             favorites = res.data.favorites
 		})
 		.catch((err) => {
@@ -45,9 +43,7 @@
             }
 		};
 		axios.request(options)
-		.then((res) => {
-            console.log(res)
-		})
+		.then((res) => {})
 		.catch((err) => {
 			console.log(err);
 		});
@@ -63,9 +59,7 @@
             }
 		};
 		axios.request(options)
-		.then((res) => {
-            console.log(res)
-		})
+		.then((res) => {})
 		.catch((err) => {
 			console.log(err);
 		});
@@ -82,9 +76,7 @@
             }
 		};
 		axios.request(options)
-		.then((res) => {
-            console.log(res)
-		})
+		.then((res) => {})
 		.catch((err) => {
 			console.log(err);
 		});
@@ -100,9 +92,7 @@
             }
 		};
 		axios.request(options)
-		.then((res) => {
-            console.log(res)
-		})
+		.then((res) => {})
 		.catch((err) => {
 			console.log(err);
 		});
